@@ -4,7 +4,6 @@ export function Thought(props) {
   const { thought, removeThought } = props;
 
   const handleRemoveClick = () => {
-    alert(thought.id);
     removeThought(thought.id);
     
   };

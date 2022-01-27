@@ -45,7 +45,6 @@ export default function App() {
   ]);
 
   function addThought(thought) {
-    //alert("addThought");
     setThoughts((thoughts) => [thought, ...thoughts]);
   }
   
