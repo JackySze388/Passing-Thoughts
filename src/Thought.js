@@ -11,12 +11,13 @@ export function Thought(props) {
     const timeRemaining = thought.expiresAt - Date.now();
     const timeout = setTimeout(() => {
       //alert('Time has passed');
-      console.log('hihi Time has passed');
+      removeThought(thought.id)
+      //console.log('hihi Time has passed');
     }, timeRemaining);
     return () => {
       clearTimeout(timeout);
     };
-  }, [thought]);
+  },[thought]);
 
   return (
     <li className="Thought">
