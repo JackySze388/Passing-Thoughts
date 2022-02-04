@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {CopyCatContainer} from './containers/CopyCatContainer';
 /*
 function App() {
   return (
@@ -66,6 +67,7 @@ export default function App() {
             <Thought key={thought.id} thought={thought} removeThought={removeThought}/>
           ))}
         </ul>
+        <CopyCatContainer/>
       </main>
       <footer>
       <img src={logo} className="App-logo" alt="logo" />
